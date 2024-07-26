@@ -9,3 +9,7 @@ class User:
         
     def add_friend(self, friend_id):
         self.friends.add(friend_id)
+        
+    def remove_friend(self, friend_id):
+        self.friends.remove(friend_id)
+        
