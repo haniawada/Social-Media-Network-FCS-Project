@@ -142,6 +142,14 @@ def main():
         elif choice == '8':
             start_user_id = input("Enter start user ID for DFS: ")
             print("DFS Result:", sn.dfs(start_user_id))
+        elif choice == '9':
+            user_id1 = input("Enter start user ID for shortest path: ")
+            user_id2 = input("Enter end user ID for shortest path: ")
+            path = sn.shortest_path(user_id1, user_id2)
+            if path:
+                print("Shortest Path:", path)
+            else:
+                print("No path found.")
         
         
     
