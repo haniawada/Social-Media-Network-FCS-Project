@@ -23,6 +23,7 @@ class User:
 class SocialNetworkGraph:
     def __init__(self):
         self.users = {}
+        self.graph = nx.Graph()
     
 
         
