@@ -150,6 +150,10 @@ def main():
                 print("Shortest Path:", path)
             else:
                 print("No path found.")
+        elif choice == '10':
+            components = sn.connected_components()
+            print("Connected Components:", components)
+        
         
         
     
