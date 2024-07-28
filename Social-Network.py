@@ -126,6 +126,10 @@ def main():
             user_id1 = input("Enter first user ID: ")
             user_id2 = input("Enter second user ID: ")
             sn.add_relationship(user_id1, user_id2)
+        elif choice == '4':
+            user_id1 = input("Enter first user ID: ")
+            user_id2 = input("Enter second user ID: ")
+            sn.remove_relationship(user_id1, user_id2)
         
     
 
