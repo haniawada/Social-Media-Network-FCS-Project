@@ -101,6 +101,12 @@ class SocialNetworkGraph:
         
     def connected_components(self):
         return list(nx.connected_components(self.graph))
+    
+    def visualize_graph(self):
+        pos = nx.spring_layout(self.graph)
+        labels = nx.get_node_attributes(self.graph, 'name')
+        nx.draw(self.graph, pos, with_labels=True, labels=labels, node_size=5000, node_color='skyblue', font_size=10)
+        plt.show()
         
     
 
