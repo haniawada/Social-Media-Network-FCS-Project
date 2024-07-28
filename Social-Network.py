@@ -99,6 +99,9 @@ class SocialNetworkGraph:
         except nx.NetworkXNoPath:
             return None
         
+    def connected_components(self):
+        return list(nx.connected_components(self.graph))
+        
     
 
         
