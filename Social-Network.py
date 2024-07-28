@@ -20,4 +20,7 @@ class User:
     def __str__(self):
         return f"User({self.user_id}, {self.name}, Friends: {len(self.friends)})"
 
+class SocialNetworkGraph:
+    
+
         
