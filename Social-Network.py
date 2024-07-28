@@ -13,3 +13,7 @@ class User:
     def remove_friend(self, friend_id):
         self.friends.remove(friend_id)
         
+    def update_profile(self, name=None):
+        if name:
+            self.name = name
+        
