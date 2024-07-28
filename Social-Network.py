@@ -108,6 +108,18 @@ class SocialNetworkGraph:
         nx.draw(self.graph, pos, with_labels=True, labels=labels, node_size=5000, node_color='skyblue', font_size=10)
         plt.show()
         
+def main():
+    sn = SocialNetworkGraph()
+
+    while True:
+        print("\n1. Add User\n2. Remove User\n3. Add Relationship\n4. Remove Relationship\n5. Update Profile\n6. Show Graph\n7. BFS\n8. DFS\n9. Shortest Path\n10. Connected Components\n11. Exit")
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            user_id = input("Enter user ID: ")
+            name = input("Enter name: ")
+            sn.add_user(user_id, name)
+        
     
 
         
