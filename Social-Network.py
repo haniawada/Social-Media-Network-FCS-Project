@@ -24,6 +24,14 @@ class SocialNetworkGraph:
     def __init__(self):
         self.users = {}
         self.graph = nx.Graph()
+        
+    def add_user(self, user_id, name):
+        if user_id not in self.users:
+            user = User(user_id, name)
+            self.users[user_id] = user
+            self.graph.add_node(user_id, name=name)
+        else:
+            print("User already exists.")
     
 
         
