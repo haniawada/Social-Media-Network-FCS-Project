@@ -92,5 +92,13 @@ class SocialNetworkGraph:
 
         return result
     
+    def shortest_path(self, user_id1, user_id2):
+        try:
+            path = nx.shortest_path(self.graph, source=user_id1, target=user_id2)
+            return path
+        except nx.NetworkXNoPath:
+            return None
+        
+    
 
         
