@@ -122,6 +122,10 @@ def main():
         elif choice == '2':
             user_id = input("Enter user ID: ")
             sn.remove_user(user_id)
+        elif choice == '3':
+            user_id1 = input("Enter first user ID: ")
+            user_id2 = input("Enter second user ID: ")
+            sn.add_relationship(user_id1, user_id2)
         
     
 
