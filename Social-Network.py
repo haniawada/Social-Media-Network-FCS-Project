@@ -21,6 +21,8 @@ class User:
         return f"User({self.user_id}, {self.name}, Friends: {len(self.friends)})"
 
 class SocialNetworkGraph:
+    def __init__(self):
+        self.users = {}
     
 
         
