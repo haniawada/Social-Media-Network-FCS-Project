@@ -136,6 +136,9 @@ def main():
             sn.update_profile(user_id, name=name if name else None)
         elif choice == '6':
             sn.visualize_graph()
+        elif choice == '7':
+            start_user_id = input("Enter start user ID for BFS: ")
+            print("BFS Result:", sn.bfs(start_user_id))
         
     
 
