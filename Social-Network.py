@@ -153,6 +153,10 @@ def main():
         elif choice == '10':
             components = sn.connected_components()
             print("Connected Components:", components)
+        elif choice == '11':
+            break
+        else:
+            print("Invalid choice. Please try again.")
         
         
         
