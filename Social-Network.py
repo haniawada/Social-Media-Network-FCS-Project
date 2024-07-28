@@ -119,6 +119,9 @@ def main():
             user_id = input("Enter user ID: ")
             name = input("Enter name: ")
             sn.add_user(user_id, name)
+        elif choice == '2':
+            user_id = input("Enter user ID: ")
+            sn.remove_user(user_id)
         
     
 
