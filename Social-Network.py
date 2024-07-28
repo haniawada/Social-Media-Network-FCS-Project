@@ -63,6 +63,20 @@ class SocialNetworkGraph:
                 self.graph.nodes[user_id]['name'] = name
         else:
             print("User not found.")
+            
+    def bfs(self, start_user_id):
+        visited = set()
+        queue = [start_user_id]
+        result = []
+
+        while queue:
+            user_id = queue.pop(0)
+            if user_id not in visited:
+                visited.add(user_id)
+                result.append(user_id)
+                queue.extend(self.graph.neighbors(user_id))
+
+        return result
     
 
         
