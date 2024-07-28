@@ -47,6 +47,14 @@ class SocialNetworkGraph:
             self.graph.add_edge(user_id1, user_id2)
         else:
             print("One or both users not found.")
+            
+    def remove_relationship(self, user_id1, user_id2):
+        if user_id1 in self.users and user_id2 in self.users:
+            self.users[user_id1].remove_friend(user_id2)
+            self.users[user_id2].remove_friend(user_id1)
+            self.graph.remove_edge(user_id1, user_id2)
+        else:
+            print("One or both users not found.")
     
 
         
