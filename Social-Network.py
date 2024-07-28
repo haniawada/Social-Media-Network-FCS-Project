@@ -134,6 +134,8 @@ def main():
             user_id = input("Enter user ID: ")
             name = input("Enter new name (leave blank to skip): ")
             sn.update_profile(user_id, name=name if name else None)
+        elif choice == '6':
+            sn.visualize_graph()
         
     
 
