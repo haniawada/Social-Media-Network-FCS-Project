@@ -16,4 +16,8 @@ class User:
     def update_profile(self, name=None):
         if name:
             self.name = name
+            
+    def __str__(self):
+        return f"User({self.user_id}, {self.name}, Friends: {len(self.friends)})"
+
         
