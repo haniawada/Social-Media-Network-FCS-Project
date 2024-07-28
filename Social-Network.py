@@ -55,6 +55,14 @@ class SocialNetworkGraph:
             self.graph.remove_edge(user_id1, user_id2)
         else:
             print("One or both users not found.")
+            
+    def update_profile(self, user_id, name=None):
+        if user_id in self.users:
+            self.users[user_id].update_profile(name=name)
+            if name:
+                self.graph.nodes[user_id]['name'] = name
+        else:
+            print("User not found.")
     
 
         
