@@ -32,6 +32,13 @@ class SocialNetworkGraph:
             self.graph.add_node(user_id, name=name)
         else:
             print("User already exists.")
+            
+    def remove_user(self, user_id):
+        if user_id in self.users:
+            del self.users[user_id]
+            self.graph.remove_node(user_id)
+        else:
+            print("User not found.")
     
 
         
