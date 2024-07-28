@@ -78,5 +78,19 @@ class SocialNetworkGraph:
 
         return result
     
+    def dfs(self, start_user_id):
+        visited = set()
+        stack = [start_user_id]
+        result = []
+
+        while stack:
+            user_id = stack.pop()
+            if user_id not in visited:
+                visited.add(user_id)
+                result.append(user_id)
+                stack.extend(self.graph.neighbors(user_id))
+
+        return result
+    
 
         
