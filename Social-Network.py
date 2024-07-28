@@ -130,6 +130,10 @@ def main():
             user_id1 = input("Enter first user ID: ")
             user_id2 = input("Enter second user ID: ")
             sn.remove_relationship(user_id1, user_id2)
+        elif choice == '5':
+            user_id = input("Enter user ID: ")
+            name = input("Enter new name (leave blank to skip): ")
+            sn.update_profile(user_id, name=name if name else None)
         
     
 
