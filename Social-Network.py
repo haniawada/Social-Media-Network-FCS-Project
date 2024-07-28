@@ -139,6 +139,10 @@ def main():
         elif choice == '7':
             start_user_id = input("Enter start user ID for BFS: ")
             print("BFS Result:", sn.bfs(start_user_id))
+        elif choice == '8':
+            start_user_id = input("Enter start user ID for DFS: ")
+            print("DFS Result:", sn.dfs(start_user_id))
+        
         
     
 
